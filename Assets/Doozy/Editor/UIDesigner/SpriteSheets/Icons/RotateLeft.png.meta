@@ -93,7 +93,7 @@ TextureImporter:
       213: 1406115462050261531
     second: ~RotateLeft_029
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -114,6 +114,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -152,9 +153,34 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -808,6 +834,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ~RotateLeft_023: 3424610155865779145
+      ~RotateLeft_016: -1194791117301207592
+      ~RotateLeft_015: 4357039752471114388
+      ~RotateLeft_008: -5095756069802706372
+      ~RotateLeft_006: 5313086189356177365
+      ~RotateLeft_028: 1109246771752019979
+      ~RotateLeft_024: -2439877272261203662
+      ~RotateLeft_018: 6669874030288971804
+      ~RotateLeft_017: 4679183730456451925
+      ~RotateLeft_019: 3871980388449458077
+      ~RotateLeft_003: 7849199531847996039
+      ~RotateLeft_000: 4588876673939417601
+      ~RotateLeft_002: 4655176291938408864
+      ~RotateLeft_020: 2969571891760563059
+      ~RotateLeft_025: 2551689185273808134
+      ~RotateLeft_029: 1406115462050261531
+      ~RotateLeft_027: 4234011821153220944
+      ~RotateLeft_011: -6924395853174801029
+      ~RotateLeft_012: -4499376518722778894
+      ~RotateLeft_022: 4672403547031720151
+      ~RotateLeft_004: 610070469905532505
+      ~RotateLeft_021: -9095714604149373731
+      ~RotateLeft_005: 8502133008964898159
+      ~RotateLeft_001: 3470898434648442135
+      ~RotateLeft_007: -7972688593604510259
+      ~RotateLeft_009: 8609005718704627631
+      ~RotateLeft_013: 7186611478691501858
+      ~RotateLeft_010: 485706915857825384
+      ~RotateLeft_026: -508023307299791966
+      ~RotateLeft_014: 3210186164726081923
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
