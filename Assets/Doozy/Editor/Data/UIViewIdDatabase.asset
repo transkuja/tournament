@@ -19,6 +19,8 @@ MonoBehaviour:
     - Category: General
       Name: BackgroundShadow
     - Category: General
+      Name: MappoolFinal
+    - Category: General
       Name: MappoolLooserBracket
     - Category: General
       Name: MappoolQualif
@@ -30,6 +32,8 @@ MonoBehaviour:
       Name: MatchRoundEdit
     - Category: General
       Name: ScoreBoard
+    - Category: General
+      Name: Selector
     - Category: General
       Name: Title
     - Category: None
