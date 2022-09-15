@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5997444730200605588}
   - component: {fileID: 2915137806312864633}
   - component: {fileID: 7704992386593232302}
+  - component: {fileID: 1952750059754291558}
   m_Layer: 5
   m_Name: OverlayVersusCinema
   m_TagString: Untagged
@@ -171,7 +172,38 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   Behaviours:
-    Behaviours: []
+    Behaviours:
+    - EventName: PointerClick
+      Runners: []
+      Event:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1952750059754291558}
+            m_TargetAssemblyTypeName: UIEditScoreButton, Assembly-CSharp
+            m_MethodName: LoadScoreWindow
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      BehaviourName: 4
+      Receiver:
+        ConnectionMode: 1
+        SignalProviderId:
+          Type: 0
+          Category: Pointer
+          Name: Click
+        ProviderReference: {fileID: 0}
+        StreamId:
+          Category: None
+          Name: None
+          Custom: 0
+      Cooldown: 0
+      Selectable: {fileID: 4779042466967062120}
     SignalSource: {fileID: 7420732726923412167}
     Selectable: {fileID: 4779042466967062120}
   Id:
@@ -258,11 +290,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
-      ToValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      FromValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
+      ToValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       CurrentValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
       Enabled: 1
-      StartColor: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      StartColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       FromReferenceValue: 2
       ToReferenceValue: 2
       FromCustomValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
@@ -340,11 +372,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      FromValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       ToValue: {r: 1, g: 1, b: 1, a: 1}
       CurrentValue: {r: 0.54084, g: 1, b: 0.8308926, a: 1}
       Enabled: 1
-      StartColor: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      StartColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 2
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -422,11 +454,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
-      ToValue: {r: 0.1647059, g: 1, b: 0.69372547, a: 1}
+      FromValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
+      ToValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       CurrentValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
       Enabled: 1
-      StartColor: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      StartColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 2
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -504,11 +536,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
-      ToValue: {r: 0.7647059, g: 1, b: 0.8745098, a: 1}
+      FromValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
+      ToValue: {r: 0.2795924, g: 0.47414327, b: 0.5754717, a: 1}
       CurrentValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
       Enabled: 1
-      StartColor: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      StartColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 2
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -586,11 +618,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
-      ToValue: {r: 0.52352947, g: 0.8411765, b: 0.72470593, a: 0.5}
+      FromValue: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
+      ToValue: {r: 0.35588235, g: 0.62784314, b: 0.7852941, a: 0.5}
       CurrentValue: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
       Enabled: 1
-      StartColor: {r: 0.3647059, g: 1, b: 0.7607843, a: 1}
+      StartColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -630,6 +662,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1952750059754291558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7420732726923412167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fb21ee0b22c764ea008da4bf6ee305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _match: 0
 --- !u!1 &7420732728114044352
 GameObject:
   m_ObjectHideFlags: 0
