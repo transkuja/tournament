@@ -28,12 +28,14 @@ namespace Doozy.Runtime.UIManager
         {
             Background,
             BackgroundShadow,
+            MappoolFinal,
             MappoolLooserBracket,
             MappoolQualif,
             MappoolWinnerBracket,
             MatchRound,
             MatchRoundEdit,
             ScoreBoard,
+            Selector,
             Title
         }    
     }

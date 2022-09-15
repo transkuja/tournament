@@ -17,16 +17,26 @@ MonoBehaviour:
     - Category: General
       Name: Back
     - Category: General
+      Name: BackMapPool
+    - Category: General
+      Name: Final
+    - Category: General
       Name: Learderboard
+    - Category: General
+      Name: LooserBracket
     - Category: General
       Name: Mappool
     - Category: General
       Name: Match
+    - Category: General
+      Name: Qualification
     - Category: General
       Name: Save
     - Category: General
       Name: ScoreID
     - Category: General
       Name: ScreenShot
+    - Category: General
+      Name: WinnerBracket
     - Category: None
       Name: None
