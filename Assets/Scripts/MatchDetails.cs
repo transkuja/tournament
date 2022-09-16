@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class MatchDetails
 {
@@ -19,6 +20,13 @@ public class MatchDetails
     public bool ContainPlayer(int PlayerId)
     {
         return PlayerInRoom.ContainsValue(PlayerId);
+    }
+
+    public List<int> GetPlayersInMatch()
+    {
+        return PlayerInRoom.Values
+            .Distinct()
+            .Where(value => value >= 0).ToList();
     }
 
    public void SetPlayerInSlot(PlayerSlot playerSlot,int playerId)

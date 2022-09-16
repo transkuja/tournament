@@ -28,4 +28,11 @@ public class MatchScore
         return 0;
     }
 
+
+    public bool HasPlayerScoreEntry(int PlayerId)
+    {
+        return PlayersScores.ContainsKey(PlayerId);
+    }
+    
+    
 }

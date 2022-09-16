@@ -30,4 +30,19 @@ public class RoundScores
         return 0;
         
     }
+
+    public bool HasPlayerSlotScoreEntry(Match match, int PlayerId)
+    {
+        if (MatchScores.ContainsKey(match))
+        {
+            return MatchScores[match].HasPlayerScoreEntry(PlayerId);
+        }
+
+        return false;
+    }
+
+    public bool HasMatchEntry(Match match)
+    {
+        return MatchScores.ContainsKey(match);
+    }
 }

@@ -5,5 +5,6 @@ using UnityEngine;
 public enum Round
 {
     Round1 = 0,
-    Round2
+    Round2,
+    Round3
 }

@@ -19,4 +19,15 @@ public class UIMatchPlayerNameScoreSlot : UIMatchPlayerNameSlot
         }
     }
 
+    protected override void UpdateInfo()
+    {
+        base.UpdateInfo();
+        UpdateScore();
+    }
+
+    public override bool HasToBeVisible()
+    {
+        Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
+        return PlayerScoreDatabase.Instance.HasMatchEntry(currentRound, Match);
+    }
 }

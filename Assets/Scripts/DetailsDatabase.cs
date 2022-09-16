@@ -100,4 +100,15 @@ public class DetailsDatabase : MonoBehaviour
     {
         return CurrentRound;
     }
+
+    public List<int> GetPlayerInMatch(Round round, Match match)
+    {
+        if (RoundDetails.ContainsKey(round))
+        {
+            List<int> Players = new List<int>();
+            return RoundDetails[round].GetPlayersInMatch(match);
+        }
+
+        return new List<int>();
+    }
 }

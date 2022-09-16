@@ -69,6 +69,7 @@ public class UIMatchRoundEdit : MonoBehaviour
     
     public void Init(Match match)
     {
+        this.match = match;
         foreach(UIMatchPlayerNameSlot nameSlot in PlayerNamesSlots)
         {
             nameSlot.SetMatch(match);

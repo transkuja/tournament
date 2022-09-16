@@ -52,6 +52,12 @@ public class UIMatchPlayerNameSlot : MonoBehaviour
     {
         Match = newMatch;
     }
+
+    public virtual bool HasToBeVisible()
+    {
+        Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
+        return !PlayerScoreDatabase.Instance.HasMatchEntry(currentRound, Match);
+    }
     
     
 }

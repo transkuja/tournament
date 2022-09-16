@@ -32,4 +32,14 @@ public class RoundDetails
 
         return -1;
     }
+
+    public List<int> GetPlayersInMatch(Match match)
+    {
+        if (MatchDetails.ContainsKey(match))
+        {
+            return MatchDetails[match].GetPlayersInMatch();
+        }
+
+        return new List<int>();
+    }
 }

@@ -379,6 +379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428632102489914545}
   - component: {fileID: 7709743874066549723}
+  - component: {fileID: 8028028479584481893}
   m_Layer: 5
   m_Name: ScoreOverlay
   m_TagString: Untagged
@@ -437,6 +438,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &8028028479584481893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428632102489914550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf482bb8628b7bd45871419afe922210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RankText: {fileID: 1428632102591501712}
+  PlayerNameText: {fileID: 6640065390194892585}
+  PointsText: {fileID: 3950117445837085578}
+  RoundText: {fileID: 172465267334984374}
+  DiffText: {fileID: 401233419036063866}
 --- !u!1 &1428632102591501718
 GameObject:
   m_ObjectHideFlags: 0
