@@ -4330,6 +4330,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1876536979}
     m_Modifications:
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: d8ad04a547bd9044cbbbd1856e9551c1,
+        type: 2}
     - target: {fileID: 5542994743258829181, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7152,6 +7158,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1876536979}
     m_Modifications:
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: Title
+      value: Round Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: 3b31f979e481b584ba4ff05848ffc9f9,
+        type: 2}
     - target: {fileID: 5542994743581226446, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}
       propertyPath: m_Name
