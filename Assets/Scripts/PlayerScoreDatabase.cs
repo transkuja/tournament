@@ -97,11 +97,11 @@ public class PlayerScoreDatabase : MonoBehaviour
 
     public List<PlayerScoreboardEntry> GenerateScoreBoardEntries()
     {
+        int roundCount = 1;
         Dictionary<int, PlayerScoreboardEntry> scoreboardEntries = new Dictionary<int, PlayerScoreboardEntry>();
         
         foreach(Round round in Enum.GetValues(typeof(Round)))
         {
-
             foreach (Match match in Enum.GetValues(typeof(Match)))
             {
                 List<int> PlayersInMatch = DetailsDatabase.Instance.GetPlayerInMatch(round, match);
@@ -113,18 +113,24 @@ public class PlayerScoreDatabase : MonoBehaviour
                         scoreboardEntry = new PlayerScoreboardEntry();
                         scoreboardEntry.PlayerId = playerId;
                         scoreboardEntries.Add(playerId, scoreboardEntry);
-                        
+
                     }
                     else
                     {
                         scoreboardEntry = scoreboardEntries[playerId];
 
                     }
-                    scoreboardEntry.Rounds++;
+
                     scoreboardEntry.Points += GetRankPoint(round, match, playerId);
                     scoreboardEntry.Diff += GetPlayerDiffInMatch(round, match, playerId);
+                    if (HasMatchEntry(round, match))
+                    {
+                        scoreboardEntry.Rounds++;
+                    }
                 }
             }
+            
+            roundCount++;
         }
 
         return scoreboardEntries.Values
@@ -158,6 +164,7 @@ public class PlayerScoreDatabase : MonoBehaviour
 
         return false;
     }
+   
 
    public void DebugGenerateRandomScoreForCurrentRound()
    {

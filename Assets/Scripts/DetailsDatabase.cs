@@ -28,7 +28,7 @@ public class DetailsDatabase : MonoBehaviour
     }
     
 
-    private Dictionary<Round, RoundDetails> RoundDetails = new Dictionary<Round, RoundDetails>();
+    private Dictionary<Round, RoundDetails> RoundDetailsData = new Dictionary<Round, RoundDetails>();
 
     private Round CurrentRound;
 
@@ -39,40 +39,42 @@ public class DetailsDatabase : MonoBehaviour
     }
 
 
-    public void GenerateRound1()
+    public void GenerateCurrentRound()
     {
-        RoundDetails round1Details = new RoundDetails();
-        List<int> PlayerIds = new List<int>();
-        for(int i = 0;i < PlayerConst.MaxPlayer;i++)
+        if (!RoundDetailsData.ContainsKey(CurrentRound))
         {
-            PlayerIds.Add(i);
+            RoundDetails newRoundDetails = new RoundDetails();
+            switch (CurrentRound)
+            {
+                case Round.Round1:
+                    newRoundDetails = RoundDetails.GenerateDefault();
+                    break;
+                case Round.Round2:
+                    newRoundDetails = RoundDetails.GenerateByCurrentRanking();
+                    break;
+                case Round.Round3:
+                    newRoundDetails = RoundDetails.GenerateByCurrentRanking();
+                    break;
+            }
+            
+            RoundDetailsData.Add(CurrentRound,newRoundDetails);
         }
-
-        //Shuffle 
-        Random random = new Random();
-       // PlayerIds.OrderBy(item => random.Next());
-
-       for (int i = 0; i < PlayerIds.Count; i++)
-       {
-           Match match = (Match)(i / 4);
-           PlayerSlot slot = (PlayerSlot)(i % 4);
-           round1Details.SetPlayerInSlot(match,slot,PlayerIds[i]);
-       }
-       
         
-        RoundDetails.Add(Round.Round1,round1Details);
+
+
+
     }
 
     void GenerateRound2()
     {
         RoundDetails round2Details = new RoundDetails();
-        RoundDetails.Add(Round.Round2,round2Details);
+        RoundDetailsData.Add(Round.Round2,round2Details);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        GenerateRound1();
+        GenerateCurrentRound();
     }
 
     // Update is called once per frame
@@ -83,9 +85,9 @@ public class DetailsDatabase : MonoBehaviour
 
     public int GetPlayerInSlot(Round round, Match match, PlayerSlot slot)
     {
-        if (RoundDetails.ContainsKey(round))
+        if (RoundDetailsData.ContainsKey(round))
         {
-            return RoundDetails[round].GetPlayerIdInSlot(match, slot);
+            return RoundDetailsData[round].GetPlayerIdInSlot(match, slot);
         }
 
         return -1;
@@ -103,12 +105,29 @@ public class DetailsDatabase : MonoBehaviour
 
     public List<int> GetPlayerInMatch(Round round, Match match)
     {
-        if (RoundDetails.ContainsKey(round))
+        if (RoundDetailsData.ContainsKey(round))
         {
             List<int> Players = new List<int>();
-            return RoundDetails[round].GetPlayersInMatch(match);
+            return RoundDetailsData[round].GetPlayersInMatch(match);
         }
 
         return new List<int>();
+    }
+
+    public void ChangeToNextRound()
+    {
+        if ((int)CurrentRound < Enum.GetValues(typeof(Round)).Length-1)
+        {
+            CurrentRound++;
+            GenerateCurrentRound();
+        }
+    }
+
+    public void ChangeToPreviousRound()
+    {
+        if ((int)CurrentRound > 0)
+        {
+            CurrentRound--;
+        }
     }
 }

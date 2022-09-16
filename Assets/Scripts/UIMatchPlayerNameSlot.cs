@@ -46,6 +46,10 @@ public class UIMatchPlayerNameSlot : MonoBehaviour
             string playerName = PlayerNameDatabase.Instance.GetPlayerName(PlayerId);
             PlayerNameText.SetText(playerName);
         }
+        else
+        {
+            PlayerNameText.SetText("");
+        }
     }
 
     public void SetMatch(Match newMatch)

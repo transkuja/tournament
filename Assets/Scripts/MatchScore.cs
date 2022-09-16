@@ -10,15 +10,19 @@ public class MatchScore
     {
         MatchScore randomMatchScore = new MatchScore();
         List<int> playerInmatch = DetailsDatabase.Instance.GetPlayerInMatch(round, match);
-        foreach (int playerId in playerInmatch)
+        if (playerInmatch.Count > 0)
         {
-            int RandomScore = Random.Range(0, 5);
-            randomMatchScore.SetPlayerScore(playerId,RandomScore);
+            foreach (int playerId in playerInmatch)
+            {
+                int RandomScore = Random.Range(0, 5);
+                randomMatchScore.SetPlayerScore(playerId, RandomScore);
+            }
+
+            int randomWinner = playerInmatch[Random.Range(0, playerInmatch.Count)];
+            randomMatchScore.SetPlayerScore(randomWinner, 5);
+
+
         }
-        
-        int randomWinner = playerInmatch[Random.Range(0, playerInmatch.Count)];
-        randomMatchScore.SetPlayerScore(randomWinner,5);
-        
         return randomMatchScore;
     }
 
