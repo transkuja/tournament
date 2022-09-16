@@ -28,38 +28,50 @@ public class PlayerScoreDatabase : MonoBehaviour
 
     
 
-    private Dictionary<Round, RoundScores> RoundScores = new Dictionary<Round, RoundScores>();
+    private Dictionary<Round, RoundScores> roundScores = new Dictionary<Round, RoundScores>();
+
+    
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     public void SetScore(Round round, Match match, int PlayerId, int PlayerScore)
     {
-        if (!RoundScores.ContainsKey(round))
+        if (!roundScores.ContainsKey(round))
         {
             RoundScores newRoundScores = new RoundScores();
             newRoundScores.SetMatchScore(match,PlayerId,PlayerScore);
-            RoundScores.Add(round,newRoundScores);
+            roundScores.Add(round,newRoundScores);
         }
         else
         {
-            RoundScores[round].SetMatchScore(match,PlayerId,PlayerScore);
+            roundScores[round].SetMatchScore(match,PlayerId,PlayerScore);
         }
     }
 
-    public int GetScore(Round round, Match match, int PlayerId)
+    public int GetGameScore(Round round, Match match, int PlayerId)
     {
-        if (RoundScores.ContainsKey(round))
+        if (roundScores.ContainsKey(round))
         {
-            return RoundScores[round].GetMatchPlayerScore(match, PlayerId);
+            return roundScores[round].GetMatchPlayerScore(match, PlayerId);
         }
         
         return 0;
+    }
+
+    public int GetRankPoint(Round round, Match match, int PlayerId)
+    {
+        if (roundScores.ContainsKey(round))
+        {
+            return roundScores[round].GetMatchRankPoint(match, PlayerId);
+        }
         
+        return 0;
     }
 
     public int GetCurrentRoundPlayerSlotScore(Round round, Match match, PlayerSlot slot)
@@ -67,14 +79,19 @@ public class PlayerScoreDatabase : MonoBehaviour
         int PlayerId = DetailsDatabase.Instance.GetPlayerInSlot(round, match, slot);
         if (PlayerId >= 0)
         {
-            return GetScore(round, match, PlayerId);
+            return GetGameScore(round, match, PlayerId);
         }
 
         return 0;
     }
     
-    public int GetPlayerDiffInMatch(Round round, Match match, int PlayerId)
+    public int GetPlayerDiffInMatch(Round round, Match match, int playerId)
     {
+        if (roundScores.ContainsKey(round))
+        {
+            return roundScores[round].GetPlayerDiffInMatch(match, playerId);
+        }
+
         return 0;
     }
 
@@ -104,12 +121,17 @@ public class PlayerScoreDatabase : MonoBehaviour
 
                     }
                     scoreboardEntry.Rounds++;
-                    scoreboardEntry.Points += GetScore(round, match, playerId);
+                    scoreboardEntry.Points += GetRankPoint(round, match, playerId);
+                    scoreboardEntry.Diff += GetPlayerDiffInMatch(round, match, playerId);
                 }
             }
         }
 
-        return scoreboardEntries.Values.OrderByDescending(scoreEntry1 => scoreEntry1.Points).ToList();
+        return scoreboardEntries.Values
+            .OrderByDescending(scoreEntry => scoreEntry.Points)
+            .ThenByDescending(scoreEntry => scoreEntry.Diff)
+            .ThenBy(scoreEntry => scoreEntry.PlayerId)
+            .ToList();
     }
 
     void Update()
@@ -119,9 +141,9 @@ public class PlayerScoreDatabase : MonoBehaviour
 
     public bool HasPlayerSlotScoreEntry(Round round, Match match,int PlayerId)
     {
-        if (RoundScores.ContainsKey(round))
+        if (roundScores.ContainsKey(round))
         {
-            RoundScores[round].HasPlayerSlotScoreEntry(match, PlayerId);
+            roundScores[round].HasPlayerSlotScoreEntry(match, PlayerId);
         }
 
         return false;
@@ -129,11 +151,25 @@ public class PlayerScoreDatabase : MonoBehaviour
 
    public  bool HasMatchEntry(Round round, Match match)
     {
-        if (RoundScores.ContainsKey(round))
+        if (roundScores.ContainsKey(round))
         {
-            return RoundScores[round].HasMatchEntry(match);
+            return roundScores[round].HasMatchEntry(match);
         }
 
         return false;
     }
+
+   public void DebugGenerateRandomScoreForCurrentRound()
+   {
+       Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
+       RoundScores mockupScores = RoundScores.GenerateRandomScores(currentRound);
+       if (roundScores.ContainsKey(currentRound))
+       {
+           roundScores[currentRound] = mockupScores;
+       }
+       else
+       {
+           roundScores.Add(currentRound,mockupScores);
+       }
+   }
 }

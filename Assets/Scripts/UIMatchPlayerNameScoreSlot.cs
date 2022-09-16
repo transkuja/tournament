@@ -14,7 +14,7 @@ public class UIMatchPlayerNameScoreSlot : UIMatchPlayerNameSlot
         if (PlayerId >= 0)
         {
             Round CurrentRound = DetailsDatabase.Instance.GetCurrentRound();
-            int score = PlayerScoreDatabase.Instance.GetScore(CurrentRound, Match, PlayerId);
+            int score = PlayerScoreDatabase.Instance.GetGameScore(CurrentRound, Match, PlayerId);
             ScoreText.SetText(score.ToString());
         }
     }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.ExceptionServices;
 using UnityEngine;
 
 public class RoundScores
@@ -44,5 +46,36 @@ public class RoundScores
     public bool HasMatchEntry(Match match)
     {
         return MatchScores.ContainsKey(match);
+    }
+
+    public int GetPlayerDiffInMatch(Match match, int playerId)
+    {
+        if (MatchScores.ContainsKey(match))
+        {
+            return MatchScores[match].GetPlayerDiff(playerId);
+        }
+
+        return 0;
+    }
+
+    public int GetMatchRankPoint(Match match, int playerId)
+    {
+        if (MatchScores.ContainsKey(match))
+        {
+            return MatchScores[match].GetRankPoint(playerId);
+        }
+
+        return 0;
+    }
+
+    public static RoundScores GenerateRandomScores(Round round)
+    {
+        RoundScores randomRoundScores = new RoundScores();
+        foreach (Match match in Enum.GetValues(typeof(Match)))
+        {
+            randomRoundScores.MatchScores.Add(match,MatchScore.GenerateRandomScores(round,match));
+        }
+
+        return randomRoundScores;
     }
 }

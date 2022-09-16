@@ -21,14 +21,22 @@ public class UIScoreBoard : MonoBehaviour
         SecondColumn.transform.DestroyChildren();
 
         int EntryCount = 0;
-        
+        int RankCount = 0;
         List<PlayerScoreboardEntry> scoreboardEntries = PlayerScoreDatabase.Instance.GenerateScoreBoardEntries();
+        PlayerScoreboardEntry lastEntry = null;
         foreach (PlayerScoreboardEntry scoreEntry in scoreboardEntries)
         {
+            //if (lastEntry == null || !lastEntry.HasSameScore(scoreEntry))
+            //{
+                RankCount = EntryCount + 1;
+            //}
+
             GameObject ColumnToUse = EntryCount < 12 ? FirstColumn : SecondColumn;
             UIScoreBoardEntry newUIScoreBoardEntry = Instantiate(ScoreBoardEntryPrefab, ColumnToUse.transform);
-            newUIScoreBoardEntry.SetScoreboardEntry(scoreEntry,EntryCount+1);
+            
+            newUIScoreBoardEntry.SetScoreboardEntry(scoreEntry,RankCount);
             EntryCount++;
+            lastEntry = scoreEntry;
         }
     }
 }
