@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Doozy.Editor.EditorUI;
+
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem.Controls;
-
 public class UIEditScore : MonoBehaviour
 {
     [SerializeField] private TMP_InputField InputField;

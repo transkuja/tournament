@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Doozy.Editor.EditorUI;
 using TMPro;
 using UnityEngine;
 
