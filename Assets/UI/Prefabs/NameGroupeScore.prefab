@@ -56,7 +56,7 @@ MonoBehaviour:
   PlayerNameText: {fileID: 4647532864328463728}
   ScoreText: {fileID: 8791267838058867563}
   ScoreOverlay: {fileID: 758499769421852139}
-  WinnerColor: {r: 0, g: 0.25530165, b: 0.4056604, a: 1}
+  WinnerColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}
   NormalColor: {r: 0.15294118, g: 0.14509805, b: 0.16470589, a: 1}
 --- !u!1 &4647532864328463730
 GameObject:

@@ -274,6 +274,21 @@ PrefabInstance:
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
+      objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4339,6 +4354,21 @@ PrefabInstance:
       propertyPath: PlayerSlot
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
+      objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5207,30 +5237,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ManualPlayerNames:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Sophia
+  - J.B
+  - Thomas
+  - Robin
+  - Justin
+  - Anthony
+  - Kayo
+  - Lucas
+  - Maxime
+  - "Th\xE9au"
+  - Cyril
+  - Alice
+  - Jordan
+  - Joachim
+  - Anne
+  - Virginie
+  - Justine
+  - Mathilde
+  - Romain
+  - Pok
+  - Tiphaine
+  - Nicolas
+  - Antonin
+  - Pierre
 --- !u!4 &596540465
 Transform:
   m_ObjectHideFlags: 0
@@ -7719,6 +7749,21 @@ PrefabInstance:
       propertyPath: PlayerSlot
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
+      objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -10005,6 +10050,21 @@ PrefabInstance:
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
+      objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -11683,6 +11743,21 @@ PrefabInstance:
       propertyPath: Match
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
+      objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -11861,6 +11936,21 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerSlot
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -12444,6 +12534,21 @@ PrefabInstance:
         type: 3}
       propertyPath: Match
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -13674,6 +13779,21 @@ PrefabInstance:
         type: 3}
       propertyPath: Match
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -15710,6 +15830,21 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerSlot
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -18301,6 +18436,21 @@ PrefabInstance:
       propertyPath: PlayerSlot
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
+      objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -19637,6 +19787,21 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerSlot
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -21526,6 +21691,21 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerSlot
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: WinnerColor.r
+      value: 0.3647059
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
