@@ -64,6 +64,16 @@ public class PlayerScoreDatabase : MonoBehaviour
         return 0;
     }
 
+    public int GetMatchWinner(Round round, Match match)
+    {
+        if (roundScores.ContainsKey(round))
+        {
+            return roundScores[round].GetMatchWinner(match);
+        }
+        
+        return -1;
+    }
+
     public int GetRankPoint(Round round, Match match, int PlayerId)
     {
         if (roundScores.ContainsKey(round))

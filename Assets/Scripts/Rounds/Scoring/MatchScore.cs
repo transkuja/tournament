@@ -97,7 +97,23 @@ public class MatchScore
             default: return 1;
         }
     }
-    
 
+
+    public int GetWinner()
+    {
+        int WinnerId = -1;
+        int BiggestScore = -1;
+        foreach (int otherPlayerId in PlayersScores.Keys)
+        {
+            int otherPlayerScore = GetPlayerScore(otherPlayerId);
+            if (otherPlayerScore > BiggestScore)
+            {
+                BiggestScore = otherPlayerScore;
+                WinnerId = otherPlayerId;
+            }
+        }
+
+        return WinnerId;
+    }
 }
 

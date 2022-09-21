@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIScoreBoardEntry : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class UIScoreBoardEntry : MonoBehaviour
     [SerializeField] private TextMeshProUGUI PointsText;
     [SerializeField] private TextMeshProUGUI RoundText;
     [SerializeField] private TextMeshProUGUI DiffText;
+    
+    [Header("Overlay")]
+    [SerializeField] private List<Image> overlaydImages = new List<Image>();
+
+    [SerializeField] private Color WinnerColor;
+    [SerializeField] private Color NormalColor;
 
     public void SetScoreboardEntry(PlayerScoreboardEntry entry, int rank)
     {
@@ -23,6 +30,13 @@ public class UIScoreBoardEntry : MonoBehaviour
         PointsText.text = entry.Points.ToString();
         RoundText.text = entry.Rounds.ToString();
         DiffText.text = entry.Diff.ToString();
+        
+        foreach (Image overlayImage in overlaydImages)
+        {
+            overlayImage.color = rank <= 8 ? WinnerColor : NormalColor;
+        }
+
+
     }
     
     // Start is called before the first frame update

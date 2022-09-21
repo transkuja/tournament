@@ -78,4 +78,14 @@ public class RoundScores
 
         return randomRoundScores;
     }
+
+    public int GetMatchWinner(Match match)
+    {
+        if (MatchScores.ContainsKey(match))
+        {
+            return MatchScores[match].GetWinner();
+        }
+
+        return -1;
+    }
 }

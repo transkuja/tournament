@@ -455,6 +455,14 @@ MonoBehaviour:
   PointsText: {fileID: 3950117445837085578}
   RoundText: {fileID: 172465267334984374}
   DiffText: {fileID: 401233419036063866}
+  overlaydImages:
+  - {fileID: 1428632102114553138}
+  - {fileID: 3941109683489200896}
+  - {fileID: 4813759648870044153}
+  - {fileID: 5099054431834196405}
+  - {fileID: 1533330947385526288}
+  WinnerColor: {r: 0, g: 0.6003356, b: 0.7264151, a: 1}
+  NormalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1428632102591501718
 GameObject:
   m_ObjectHideFlags: 0
