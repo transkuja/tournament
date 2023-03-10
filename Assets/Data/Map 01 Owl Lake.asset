@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c84e0f808804fa4c953bde93377c4dc, type: 3}
-  m_Name: Map Sunken City
+  m_Name: Map 01 Owl Lake
   m_EditorClassIdentifier: 
-  MapImage: {fileID: 21300000, guid: a23ae92513d75954db0d172d984fe271, type: 3}
-  MapIcon: {fileID: 21300000, guid: 7f9791836299eec49a1750d60eca2936, type: 3}
-  MapName: Sunken City
+  MapImage: {fileID: 21300000, guid: 695dcce529cbe56488e3e032c1c90f2e, type: 3}
+  MapIcon: {fileID: 21300000, guid: 76060e9738c4753498aeb3fe7902c7ac, type: 3}
+  MapName: Owl Lake

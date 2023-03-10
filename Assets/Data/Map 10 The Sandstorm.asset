@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c84e0f808804fa4c953bde93377c4dc, type: 3}
-  m_Name: Map Tower Forge
+  m_Name: Map 10 The Sandstorm
   m_EditorClassIdentifier: 
-  MapImage: {fileID: 21300000, guid: fe6dd00abf7f658409df4b19aa712e24, type: 3}
-  MapIcon: {fileID: 21300000, guid: 2327a26f2ddd9644798fd306a72caac5, type: 3}
-  MapName: Tower Forge
+  MapImage: {fileID: 21300000, guid: 2b7cc4f38e8937347a588db2d349c9f3, type: 3}
+  MapIcon: {fileID: 21300000, guid: 42175d530267ea844a1be3ef2a43e85f, type: 3}
+  MapName: Thornwood

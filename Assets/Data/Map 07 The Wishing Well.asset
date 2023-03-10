@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c84e0f808804fa4c953bde93377c4dc, type: 3}
-  m_Name: Map King's Court
+  m_Name: Map 07 The Wishing Well
   m_EditorClassIdentifier: 
-  MapImage: {fileID: 21300000, guid: 3a71e6483dfa9a342b5cf58b53c43570, type: 3}
-  MapIcon: {fileID: 21300000, guid: ef67de1fd4c40b44898a3f583f796cde, type: 3}
-  MapName: King's Court
+  MapImage: {fileID: 21300000, guid: d87477b9b4ff89141af01238cf335f04, type: 3}
+  MapIcon: {fileID: 21300000, guid: ca4cf6171a94b6648acbe629ca928eaf, type: 3}
+  MapName: Sacred Ground

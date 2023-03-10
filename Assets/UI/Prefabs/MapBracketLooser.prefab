@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 3625781834145138822}
   - component: {fileID: 2883042958628989413}
   m_Layer: 5
-  m_Name: MapQualif
+  m_Name: MapBracketLooser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

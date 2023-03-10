@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c84e0f808804fa4c953bde93377c4dc, type: 3}
-  m_Name: Map Mirage
+  m_Name: Map 00 ModeMerlinBall
   m_EditorClassIdentifier: 
-  MapImage: {fileID: 21300000, guid: 0e878d287a8ef714696d953e670bbc64, type: 3}
-  MapIcon: {fileID: 21300000, guid: 4a41e7263b7166f428726855cb702f86, type: 3}
-  MapName: Mirage
+  MapImage: {fileID: 21300000, guid: e1c1cb0524bb74147a2654c877a763ec, type: 3}
+  MapIcon: {fileID: 21300000, guid: 15ad543c719132e4999295aee7a9d7b1, type: 3}
+  MapName: Twilight Spire

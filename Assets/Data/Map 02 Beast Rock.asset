@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c84e0f808804fa4c953bde93377c4dc, type: 3}
-  m_Name: Map Frostfang Keep
+  m_Name: Map 02 Beast Rock
   m_EditorClassIdentifier: 
-  MapImage: {fileID: 21300000, guid: 5a760ee4413dca44b9a012f542733f94, type: 3}
-  MapIcon: {fileID: 21300000, guid: e92ed3644fe30d74ca79d0881ddb6bf5, type: 3}
-  MapName: Frostfang Keep
+  MapImage: {fileID: 21300000, guid: 68d56c27e64907149969efeb0dd564ef, type: 3}
+  MapIcon: {fileID: 21300000, guid: 68d56c27e64907149969efeb0dd564ef, type: 3}
+  MapName: Flight
