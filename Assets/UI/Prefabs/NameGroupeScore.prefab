@@ -124,7 +124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Joachim
+  m_text: Cheese cake
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f91b5bcf4316ad244a3c67c7fa8f5f36, type: 2}
   m_sharedMaterial: {fileID: 3139242633056690914, guid: f91b5bcf4316ad244a3c67c7fa8f5f36,
@@ -231,7 +231,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 55, y: 0}
-  m_SizeDelta: {x: 167, y: 56}
+  m_SizeDelta: {x: 230, y: 56}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4647532864850978984
 CanvasRenderer:
