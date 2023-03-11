@@ -16,7 +16,7 @@ public class UIMatchRoundEdit : MonoBehaviour
     private Match match;
     
     private List<UIEditScore> EditScores = new List<UIEditScore>();
-    private List<UIMatchPlayerNameSlot> PlayerNamesSlots = new List<UIMatchPlayerNameSlot>();
+    private List<UIMatchTeamNameSlot> TeamNamesSlots = new List<UIMatchTeamNameSlot>();
 
     private void Awake()
     {
@@ -36,11 +36,11 @@ public class UIMatchRoundEdit : MonoBehaviour
         match = newMatch;
     }
 
-    public UIEditScore GetEditScoreBySlot(PlayerSlot slot)
+    public UIEditScore GetEditScoreBySlot(TeamSlot slot)
     {
         foreach(UIEditScore editScore in EditScores)
         {
-            if (editScore.GetPlayerSlot() == slot)
+            if (editScore.GetTeamSlot() == slot)
             {
                 return editScore;
             }
@@ -52,7 +52,7 @@ public class UIMatchRoundEdit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerNamesSlots.AddRange(GetComponentsInChildren<UIMatchPlayerNameSlot>());
+        TeamNamesSlots.AddRange(GetComponentsInChildren<UIMatchTeamNameSlot>());
         EditScores.AddRange(GetComponentsInChildren<UIEditScore>());
     }
 
@@ -60,9 +60,9 @@ public class UIMatchRoundEdit : MonoBehaviour
     {
         foreach (UIEditScore editScore in EditScores)
         {
-            Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
-            int PlayerId = DetailsDatabase.Instance.GetPlayerInSlot(currentRound, match, editScore.GetPlayerSlot());
-            PlayerScoreDatabase.Instance.SetScore(currentRound,match,PlayerId,editScore.GetScore());
+            Round currentRound = OCG2DetailsDatabase.Instance.GetCurrentRound();
+            int TeamId = OCG2DetailsDatabase.Instance.GetTeamInSlot(currentRound, match, editScore.GetTeamSlot());
+            TeamScoreDatabase.Instance.SetScore(currentRound,match,TeamId,editScore.GetScore());
         }
     }
     
@@ -70,7 +70,7 @@ public class UIMatchRoundEdit : MonoBehaviour
     public void Init(Match match)
     {
         this.match = match;
-        foreach(UIMatchPlayerNameSlot nameSlot in PlayerNamesSlots)
+        foreach(UIMatchTeamNameSlot nameSlot in TeamNamesSlots)
         {
             nameSlot.SetMatch(match);
         }

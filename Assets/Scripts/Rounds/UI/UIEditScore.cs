@@ -1,11 +1,13 @@
 
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
+
 public class UIEditScore : MonoBehaviour
 {
     [SerializeField] private TMP_InputField InputField;
 
-    [SerializeField] private PlayerSlot PlayerSlot;
+    [FormerlySerializedAs("PlayerSlot")] [SerializeField] private TeamSlot TeamSlot;
 
     private Match match;
     
@@ -37,9 +39,9 @@ public class UIEditScore : MonoBehaviour
         return 0;
     }
 
-    public PlayerSlot GetPlayerSlot()
+    public TeamSlot GetTeamSlot()
     {
-        return PlayerSlot;
+        return TeamSlot;
     }
 
     public void SetMatch(Match newMatch)
@@ -49,8 +51,8 @@ public class UIEditScore : MonoBehaviour
 
     public void LoadScoreFromDatabase()
     {
-        Round round = DetailsDatabase.Instance.GetCurrentRound();
-        int score = PlayerScoreDatabase.Instance.GetCurrentRoundPlayerSlotScore(round, match, PlayerSlot);
+        Round round = OCG2DetailsDatabase.Instance.GetCurrentRound();
+        int score = TeamScoreDatabase.Instance.GetCurrentRoundTeamSlotScore(round, match, TeamSlot);
         SetScore(score);
     }
 }

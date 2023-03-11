@@ -450,10 +450,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RankText: {fileID: 1428632102591501712}
-  PlayerNameText: {fileID: 6640065390194892585}
-  PointsText: {fileID: 3950117445837085578}
+  TeamNameText: {fileID: 1451751905066713718}
   RoundText: {fileID: 172465267334984374}
+  WinsText: {fileID: 3950117445837085578}
+  LoosesText: {fileID: 580948722021024913}
   DiffText: {fileID: 401233419036063866}
+  TeamPlayersText: {fileID: 6640065390194892585}
+  TeamIconImage: {fileID: 7109756314444940832}
   overlaydImages:
   - {fileID: 1428632102114553138}
   WinnerColor: {r: 0.14117648, g: 0.7058824, b: 1, a: 1}

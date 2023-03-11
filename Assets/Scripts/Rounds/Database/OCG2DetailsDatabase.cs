@@ -5,11 +5,11 @@ using System.Linq;
 using UnityEngine;
 using Random = System.Random;
 
-public class DetailsDatabase : MonoBehaviour
+public class OCG2DetailsDatabase : MonoBehaviour
 {
-    private static DetailsDatabase _instance;
+    private static OCG2DetailsDatabase _instance;
 
-    public static DetailsDatabase Instance
+    public static OCG2DetailsDatabase Instance
     {
         get => _instance;
     }
@@ -28,7 +28,7 @@ public class DetailsDatabase : MonoBehaviour
     }
     
 
-    private Dictionary<Round, RoundDetails> RoundDetailsData = new Dictionary<Round, RoundDetails>();
+    private Dictionary<Round, OCG2RoundDetails> RoundDetailsData = new Dictionary<Round, OCG2RoundDetails>();
 
     private Round CurrentRound;
 
@@ -43,17 +43,17 @@ public class DetailsDatabase : MonoBehaviour
     {
         if (!RoundDetailsData.ContainsKey(CurrentRound))
         {
-            RoundDetails newRoundDetails = new RoundDetails();
+            OCG2RoundDetails newRoundDetails = new OCG2RoundDetails();
             switch (CurrentRound)
             {
                 case Round.Round1:
-                    newRoundDetails = RoundDetails.GenerateDefault();
+                    newRoundDetails = OCG2RoundDetails.GenerateDefault();
                     break;
                 case Round.Round2:
-                    newRoundDetails = RoundDetails.GenerateByCurrentRanking();
+                    newRoundDetails = OCG2RoundDetails.GenerateByCurrentRanking();
                     break;
                 case Round.Round3:
-                    newRoundDetails = RoundDetails.GenerateByCurrentRanking();
+                    newRoundDetails = OCG2RoundDetails.GenerateByCurrentRanking();
                     break;
             }
             
@@ -67,7 +67,7 @@ public class DetailsDatabase : MonoBehaviour
 
     void GenerateRound2()
     {
-        RoundDetails round2Details = new RoundDetails();
+        OCG2RoundDetails round2Details = new OCG2RoundDetails();
         RoundDetailsData.Add(Round.Round2,round2Details);
     }
 
@@ -83,19 +83,19 @@ public class DetailsDatabase : MonoBehaviour
         
     }
 
-    public int GetPlayerInSlot(Round round, Match match, PlayerSlot slot)
+    public int GetTeamInSlot(Round round, Match match, TeamSlot slot)
     {
         if (RoundDetailsData.ContainsKey(round))
         {
-            return RoundDetailsData[round].GetPlayerIdInSlot(match, slot);
+            return RoundDetailsData[round].GetTeamIdInSlot(match, slot);
         }
 
         return -1;
     }
 
-    public int GetPlayerInSlotCurrentround(Match match, PlayerSlot slot)
+    public int GetTeamInSlotCurrentround(Match match, TeamSlot slot)
     {
-        return GetPlayerInSlot(CurrentRound, match, slot);
+        return GetTeamInSlot(CurrentRound, match, slot);
     }
 
     public Round GetCurrentRound()
@@ -103,12 +103,12 @@ public class DetailsDatabase : MonoBehaviour
         return CurrentRound;
     }
 
-    public List<int> GetPlayerInMatch(Round round, Match match)
+    public List<int> GetTeamsInMatch(Round round, Match match)
     {
         if (RoundDetailsData.ContainsKey(round))
         {
             List<int> Players = new List<int>();
-            return RoundDetailsData[round].GetPlayersInMatch(match);
+            return RoundDetailsData[round].GetTeamsInMatch(match);
         }
 
         return new List<int>();

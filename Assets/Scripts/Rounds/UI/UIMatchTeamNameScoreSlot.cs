@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMatchPlayerNameScoreSlot : UIMatchPlayerNameSlot
+public class UIMatchTeamNameScoreSlot : UIMatchTeamNameSlot
 {
 
     [SerializeField]  protected TextMeshProUGUI ScoreText;
@@ -14,22 +14,23 @@ public class UIMatchPlayerNameScoreSlot : UIMatchPlayerNameSlot
     [SerializeField] protected Color WinnerColor;
     [SerializeField] protected Color NormalColor;
     
+    
 
     void UpdateScore()
     {
-        int PlayerId = GetPlayerId();
-        if (PlayerId >= 0)
+        int TeamId = GetTeamId();
+        if (TeamId >= 0)
         {
-            Round CurrentRound = DetailsDatabase.Instance.GetCurrentRound();
-            int score = PlayerScoreDatabase.Instance.GetGameScore(CurrentRound, Match, PlayerId);
+            Round CurrentRound = OCG2DetailsDatabase.Instance.GetCurrentRound();
+            int score = TeamScoreDatabase.Instance.GetGameScore(CurrentRound, Match, TeamId);
             ScoreText.SetText(score.ToString());
         }
     }
 
     void UpdateScoreOverlay()
     {
-        Round CurrentRound = DetailsDatabase.Instance.GetCurrentRound();
-        ScoreOverlay.color = PlayerScoreDatabase.Instance.GetMatchWinner(CurrentRound, Match) == GetPlayerId()
+        Round CurrentRound = OCG2DetailsDatabase.Instance.GetCurrentRound();
+        ScoreOverlay.color = TeamScoreDatabase.Instance.GetMatchWinner(CurrentRound, Match) == GetTeamId()
             ? WinnerColor
             : NormalColor;
     }
@@ -43,7 +44,7 @@ public class UIMatchPlayerNameScoreSlot : UIMatchPlayerNameSlot
 
     public override bool HasToBeVisible()
     {
-        Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
-        return PlayerScoreDatabase.Instance.HasMatchEntry(currentRound, Match);
+        Round currentRound = OCG2DetailsDatabase.Instance.GetCurrentRound();
+        return TeamScoreDatabase.Instance.HasMatchEntry(currentRound, Match);
     }
 }

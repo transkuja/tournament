@@ -11,7 +11,7 @@ public class UIRoundTitle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
+        Round currentRound = OCG2DetailsDatabase.Instance.GetCurrentRound();
         string roundText;
         switch (currentRound)
         {

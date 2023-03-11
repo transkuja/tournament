@@ -19,10 +19,10 @@ public class UIChangeRoundButton : MonoBehaviour
         switch (ChangeType)
         {
             case UIChangeButtonType.NextRound:
-                DetailsDatabase.Instance.ChangeToNextRound();
+                OCG2DetailsDatabase.Instance.ChangeToNextRound();
                 break;
             case UIChangeButtonType.PreviousRound:
-                DetailsDatabase.Instance.ChangeToPreviousRound();
+                OCG2DetailsDatabase.Instance.ChangeToPreviousRound();
                 break;
         }
     }

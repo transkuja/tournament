@@ -51,8 +51,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Match: 0
-  PlayerSlot: 0
-  PlayerNameText: {fileID: 4647532864328463728}
+  TeamSlot: 0
+  TeamNameText: {fileID: 4647532864328463728}
+  TeamIconImage: {fileID: 4052688977804479403}
 --- !u!1 &4647532864328463730
 GameObject:
   m_ObjectHideFlags: 0

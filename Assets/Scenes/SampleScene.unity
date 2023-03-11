@@ -405,6 +405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -1215,6 +1220,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -1392,7 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a22dba8abdc6745a2235541aa33ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  match: 4
+  match: 5
   HideWhenMatchScore: 1
 --- !u!224 &129394581 stripped
 RectTransform:
@@ -4504,75 +4514,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 586352456}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &596540463
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 596540465}
-  - component: {fileID: 596540464}
-  m_Layer: 0
-  m_Name: '[PlayerNameDatabase]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &596540464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596540463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b76de21420bc7d48b5dd426713a0ad1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ManualPlayerNames:
-  - Sophia
-  - J.B
-  - Thomas
-  - Robin
-  - Justin
-  - Anthony
-  - Kayo
-  - Lucas
-  - Maxime
-  - "Th\xE9au"
-  - Cyril
-  - Alice
-  - Jordan
-  - Joachim
-  - Anne
-  - Valentin
-  - Justine
-  - Mathilde
-  - Romain
-  - Pok
-  - Tiphaine
-  - Nicolas
-  - Antonin
-  - Pierre
---- !u!4 &596540465
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596540463}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.660015, y: -3.0628357, z: 90}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &602403850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5258,7 +5199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a22dba8abdc6745a2235541aa33ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  match: 4
+  match: 6
   HideWhenMatchScore: 0
 --- !u!1 &639051962
 GameObject:
@@ -5426,6 +5367,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 290106515}
     m_Modifications:
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: PlayerSlot
@@ -6095,6 +6041,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -6634,6 +6585,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -7011,6 +6967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EditScore (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389446351208831272, guid: e01adeeeb0536a54491858238f55bb36,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4389446351208831272, guid: e01adeeeb0536a54491858238f55bb36,
         type: 3}
@@ -7731,6 +7692,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -8178,6 +8144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -8590,7 +8561,12 @@ PrefabInstance:
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
       propertyPath: Match
-      value: 4
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
@@ -8726,6 +8702,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Match
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
@@ -9850,7 +9831,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1234535548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e84caff0a008d4295b68dd3551971f, type: 3}
+  m_Script: {fileID: 11500000, guid: b139b3500206401e95d22dd72ca77dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1234535550
@@ -9866,7 +9847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1234732759
 PrefabInstance:
@@ -10359,6 +10340,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2047092663}
     m_Modifications:
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
       propertyPath: PlayerSlot
@@ -11534,6 +11520,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -12586,6 +12577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -12722,7 +12718,7 @@ PrefabInstance:
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: Match
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -13465,7 +13461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1646285844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b89faca13d922a40964798c0b9b0693, type: 3}
+  m_Script: {fileID: 11500000, guid: c1ac34ba371a46ec8bcfa74d6f4f56cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1646285846
@@ -13494,6 +13490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Match
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -13641,7 +13642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1703811450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15703,7 +15704,7 @@ PrefabInstance:
     - target: {fileID: 1952750059754291558, guid: a55f8fa8872c28341a94fbab239e36d0,
         type: 3}
       propertyPath: _match
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7420732726923412164, guid: a55f8fa8872c28341a94fbab239e36d0,
         type: 3}
@@ -16130,7 +16131,7 @@ PrefabInstance:
     - target: {fileID: 2784114714877337074, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
       propertyPath: Match
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4647532863839854660, guid: 56bc55bb808901d4ea1dc36f2b4d2843,
         type: 3}
@@ -16260,7 +16261,12 @@ PrefabInstance:
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
       propertyPath: Match
-      value: 4
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
+      propertyPath: TeamSlot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
@@ -17463,6 +17469,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
         type: 3}
+      propertyPath: TeamSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976883310187452134, guid: 06a923196da60e045997b249218d3ff6,
+        type: 3}
       propertyPath: PlayerSlot
       value: 1
       objectReference: {fileID: 0}
@@ -17792,6 +17803,107 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114548072}
   m_CullTransparentMesh: 1
+--- !u!1 &2134324682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134324684}
+  - component: {fileID: 2134324683}
+  m_Layer: 0
+  m_Name: '[TeamDatabase]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2134324683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134324682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8365b236f7418a8eced5337acd0565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ManualTeams:
+  - TeamName: Avocado
+    Player1Name: Maxime
+    Player2Name: Ivan
+    TeamLogo: {fileID: 21300000, guid: 2d889e9363206f94795c49097aed8bc8, type: 3}
+  - TeamName: Watermelon
+    Player1Name: Antonin
+    Player2Name: Ben
+    TeamLogo: {fileID: 0}
+  - TeamName: Cheese cake
+    Player1Name: Justine
+    Player2Name: Alexandre
+    TeamLogo: {fileID: 0}
+  - TeamName: Brioche
+    Player1Name: Anthony
+    Player2Name: Virginie
+    TeamLogo: {fileID: 0}
+  - TeamName: Requefort
+    Player1Name: "Th\xE9au"
+    Player2Name: Stephy
+    TeamLogo: {fileID: 0}
+  - TeamName: Sushi
+    Player1Name: Jean-Baptiste
+    Player2Name: Pok
+    TeamLogo: {fileID: 0}
+  - TeamName: Ham hock
+    Player1Name: Marcello
+    Player2Name: Sophia
+    TeamLogo: {fileID: 0}
+  - TeamName: Turnip
+    Player1Name: Mathilde
+    Player2Name: Cyril
+    TeamLogo: {fileID: 0}
+  - TeamName: "Jalape\xF1o"
+    Player1Name: Emmanuel
+    Player2Name: Tiphaine
+    TeamLogo: {fileID: 0}
+  - TeamName: Croissant
+    Player1Name: Nicolas Duboc
+    Player2Name: Thomas Baron
+    TeamLogo: {fileID: 0}
+  - TeamName: Flan
+    Player1Name: Robin
+    Player2Name: Etienne
+    TeamLogo: {fileID: 0}
+  - TeamName: Broccoli
+    Player1Name: Joachim
+    Player2Name: Kayo
+    TeamLogo: {fileID: 0}
+  - TeamName: Hotdog
+    Player1Name: Thomas Freund
+    Player2Name: Nicolas Coppin
+    TeamLogo: {fileID: 0}
+  - TeamName: Fried egg
+    Player1Name: Jordan
+    Player2Name: Lucas
+    TeamLogo: {fileID: 0}
+--- !u!4 &2134324684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134324682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.267827, y: -12.888889, z: 434.03207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &240802126449480970
 PrefabInstance:
   m_ObjectHideFlags: 0

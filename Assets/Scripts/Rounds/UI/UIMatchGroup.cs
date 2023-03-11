@@ -18,8 +18,8 @@ public class UIMatchGroup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Round currentRound = DetailsDatabase.Instance.GetCurrentRound();
-        bool HasMatchEntry = PlayerScoreDatabase.Instance.HasMatchEntry(currentRound, match);
+        Round currentRound = OCG2DetailsDatabase.Instance.GetCurrentRound();
+        bool HasMatchEntry = TeamScoreDatabase.Instance.HasMatchEntry(currentRound, match);
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive((HideWhenMatchScore && !HasMatchEntry) || (!HideWhenMatchScore && HasMatchEntry));
