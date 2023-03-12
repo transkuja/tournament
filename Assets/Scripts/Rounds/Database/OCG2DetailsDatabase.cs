@@ -37,6 +37,24 @@ public class OCG2DetailsDatabase : MonoBehaviour
     {
         CurrentRound = newRound;
     }
+    
+    public int GetTeamPlayedInRoomCount(int TeamId, Room room)
+    {
+        int count = 0;
+        foreach(Round round in Enum.GetValues(typeof(Round)))
+        {
+            foreach(Match match in Enum.GetValues(typeof(Match)))
+            {
+                if (GetTeamsInMatch(round, match).Contains(TeamId) && MatchUtils.GetMatchRoom(match) == room)
+                {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+
+    }
 
 
     public void GenerateCurrentRound()
@@ -113,6 +131,8 @@ public class OCG2DetailsDatabase : MonoBehaviour
 
         return new List<int>();
     }
+    
+    
 
     public void ChangeToNextRound()
     {

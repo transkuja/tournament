@@ -65,11 +65,7 @@ public class UIMatchTeamNameSlot : MonoBehaviour
         {
             Team team = TeamDatabase.Instance.GetTeamById(TeamId);
             string teamName = team.TeamName;
-            if (team.TeamLogo != null)
-            {
-                TeamIconImage.sprite = team.TeamLogo;
-            }
-
+            TeamIconImage.sprite = team.TeamLogo;
         }
     }
 

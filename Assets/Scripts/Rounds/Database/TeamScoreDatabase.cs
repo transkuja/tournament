@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using UnityEngine;
 
 public class TeamScoreDatabase : MonoBehaviour
@@ -194,6 +195,8 @@ public class TeamScoreDatabase : MonoBehaviour
 
         return false;
     }
+
+
    
 
    public void DebugGenerateRandomScoreForCurrentRound()
