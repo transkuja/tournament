@@ -6,8 +6,4 @@ using UnityEngine;
 public class MapDetails : ScriptableObject
 {
     public Sprite MapImage;
-
-    public Sprite MapIcon;
-
-    public string MapName;
 }
