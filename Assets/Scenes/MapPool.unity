@@ -1158,12 +1158,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296934702}
   m_CullTransparentMesh: 1
---- !u!1 &350934132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4993770876941553729, guid: 7682ddaebe16cf9489c6ca5a045db424,
-    type: 3}
-  m_PrefabInstance: {fileID: 1462265954}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &418416774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +1942,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1607846762}
     m_Modifications:
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: Title
+      value: Round 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails1
+      value: 
+      objectReference: {fileID: 11400000, guid: be5e472eca95af143a7a42775c12dfe5,
+        type: 2}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails2
+      value: 
+      objectReference: {fileID: 11400000, guid: 44b016cd007b654469412d085a306cca,
+        type: 2}
     - target: {fileID: 5542994743581226446, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}
       propertyPath: m_Name
@@ -2172,6 +2183,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1607846762}
     m_Modifications:
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: Title
+      value: Round 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails1
+      value: 
+      objectReference: {fileID: 11400000, guid: a840c2b836bf04b4bb496c2f0449c38c,
+        type: 2}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails2
+      value: 
+      objectReference: {fileID: 11400000, guid: d90eeda28096cb64a828f4b3d30243e9,
+        type: 2}
     - target: {fileID: 5542994743581226446, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}
       propertyPath: m_Name
@@ -2300,12 +2328,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5542994743581226447, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
     type: 3}
   m_PrefabInstance: {fileID: 1752478477}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &800699109 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4993770876941553729, guid: 7682ddaebe16cf9489c6ca5a045db424,
-    type: 3}
-  m_PrefabInstance: {fileID: 1494262675}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &832565745
 GameObject:
@@ -3219,11 +3241,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b19372bc380c58d4ea63419490c2a93f,
         type: 2}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: mapDetails2
+      value: 
+      objectReference: {fileID: 11400000, guid: 608fb2a5de2f5ee40a38bdf69cac36f3,
+        type: 2}
     - target: {fileID: 3533827420955381405, guid: 7682ddaebe16cf9489c6ca5a045db424,
         type: 3}
       propertyPath: Behaviours.SignalSource
       value: 
-      objectReference: {fileID: 1359933248}
+      objectReference: {fileID: 0}
     - target: {fileID: 5542994743581226446, guid: 7682ddaebe16cf9489c6ca5a045db424,
         type: 3}
       propertyPath: m_Name
@@ -3339,12 +3367,6 @@ PrefabInstance:
 --- !u!224 &1325658301 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5542994743581226447, guid: 7682ddaebe16cf9489c6ca5a045db424,
-    type: 3}
-  m_PrefabInstance: {fileID: 1325658300}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1359933248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4993770876941553729, guid: 7682ddaebe16cf9489c6ca5a045db424,
     type: 3}
   m_PrefabInstance: {fileID: 1325658300}
   m_PrefabAsset: {fileID: 0}
@@ -3944,11 +3966,28 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.0000076293945
       objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: Title
+      value: Round 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: mapDetails1
+      value: 
+      objectReference: {fileID: 11400000, guid: d90eeda28096cb64a828f4b3d30243e9,
+        type: 2}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: mapDetails2
+      value: 
+      objectReference: {fileID: 11400000, guid: be5e472eca95af143a7a42775c12dfe5,
+        type: 2}
     - target: {fileID: 3533827420955381405, guid: 7682ddaebe16cf9489c6ca5a045db424,
         type: 3}
       propertyPath: Behaviours.SignalSource
       value: 
-      objectReference: {fileID: 350934132}
+      objectReference: {fileID: 0}
     - target: {fileID: 5542994743581226446, guid: 7682ddaebe16cf9489c6ca5a045db424,
         type: 3}
       propertyPath: m_Name
@@ -4145,11 +4184,28 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.0000076293945
       objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: Title
+      value: Round 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: mapDetails1
+      value: 
+      objectReference: {fileID: 11400000, guid: 44b016cd007b654469412d085a306cca,
+        type: 2}
+    - target: {fileID: 2883042958628989413, guid: 7682ddaebe16cf9489c6ca5a045db424,
+        type: 3}
+      propertyPath: mapDetails2
+      value: 
+      objectReference: {fileID: 11400000, guid: 88acdd550d3fe5748804b5742621bb83,
+        type: 2}
     - target: {fileID: 3533827420955381405, guid: 7682ddaebe16cf9489c6ca5a045db424,
         type: 3}
       propertyPath: Behaviours.SignalSource
       value: 
-      objectReference: {fileID: 800699109}
+      objectReference: {fileID: 0}
     - target: {fileID: 5542994743581226446, guid: 7682ddaebe16cf9489c6ca5a045db424,
         type: 3}
       propertyPath: m_Name
@@ -6515,13 +6571,25 @@ PrefabInstance:
     - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}
       propertyPath: Title
-      value: ROUND 1
+      value: Round 1
       objectReference: {fileID: 0}
     - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}
       propertyPath: mapDetails
       value: 
       objectReference: {fileID: 11400000, guid: be5e472eca95af143a7a42775c12dfe5,
+        type: 2}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails1
+      value: 
+      objectReference: {fileID: 11400000, guid: b19372bc380c58d4ea63419490c2a93f,
+        type: 2}
+    - target: {fileID: 2883042958628989413, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
+        type: 3}
+      propertyPath: mapDetails2
+      value: 
+      objectReference: {fileID: 11400000, guid: 78d83d0c383e07246b7ee4ebbbe4ac0a,
         type: 2}
     - target: {fileID: 5542994743581226446, guid: 20d43494ebcdb7b4eb5e8c4402a5a177,
         type: 3}

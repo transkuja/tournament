@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5708227145597718511}
   - component: {fileID: 3951459969191960364}
+  - component: {fileID: 8871726485090007861}
+  - component: {fileID: 8258540822795420260}
   m_Layer: 5
   m_Name: Map2Button
   m_TagString: Untagged
@@ -166,6 +168,44 @@ MonoBehaviour:
     Name: None
     Custom: 0
   Cooldown: 0
+--- !u!222 &8871726485090007861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670550089124810236}
+  m_CullTransparentMesh: 1
+--- !u!114 &8258540822795420260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670550089124810236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3674072886747023298
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +216,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5093919816763606384}
   - component: {fileID: 9026189772256277243}
+  - component: {fileID: 7047388704206683046}
+  - component: {fileID: 8474617228104132672}
   m_Layer: 5
   m_Name: Map1Button
   m_TagString: Untagged
@@ -332,6 +374,44 @@ MonoBehaviour:
     Name: None
     Custom: 0
   Cooldown: 0
+--- !u!222 &7047388704206683046
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674072886747023298}
+  m_CullTransparentMesh: 1
+--- !u!114 &8474617228104132672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674072886747023298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5542994742717957903
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +909,6 @@ MonoBehaviour:
   MapImageComponent: {fileID: 5542994742889584141}
   CardTitleTextComponent: {fileID: 5542994742717957897}
   animator: {fileID: 3625781834145138822}
-  IsLeftCardRevieled: 1
 --- !u!1 &5542994743660679749
 GameObject:
   m_ObjectHideFlags: 0
