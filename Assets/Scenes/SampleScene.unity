@@ -17847,9 +17847,9 @@ MonoBehaviour:
     TeamLogo: {fileID: 21300000, guid: 817b95f425ff19a4e8c3c2096b8662b8, type: 3}
   - TeamName: Brioche
     Player1Name: Anthony
-    Player2Name: Virginie
+    Player2Name: "Fran\xE7ois"
     TeamLogo: {fileID: 21300000, guid: 7a47bf9f40d0efa49ac98ebfda67fbb4, type: 3}
-  - TeamName: Requefort
+  - TeamName: Roquefort
     Player1Name: "Th\xE9au"
     Player2Name: Sephy
     TeamLogo: {fileID: 21300000, guid: f7ccdef3cbcfc664c8470c34ae6b39fd, type: 3}
@@ -17863,7 +17863,7 @@ MonoBehaviour:
     TeamLogo: {fileID: 21300000, guid: 105db11bb9bc1c745818eb3853e46d37, type: 3}
   - TeamName: Turnip
     Player1Name: Mathilde
-    Player2Name: Cyril
+    Player2Name: "Micha\xEBl"
     TeamLogo: {fileID: 21300000, guid: c3cec79df50d3c042963ee2ec1405de5, type: 3}
   - TeamName: "Jalape\xF1o"
     Player1Name: Emmanuel
